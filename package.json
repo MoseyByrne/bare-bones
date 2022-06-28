@@ -1,11 +1,11 @@
 {
-  "name": "template-repo",
+  "name": "bare-bones",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "build": "webpack --mode=development",
+    "start": "npm run build && webpack-dev-server --open --mode=development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
@@ -16,10 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SandraT22/pig-dice-MB/issues"
-  },
-  "homepage": "https://github.com/SandraT22/pig-dice-MB#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
